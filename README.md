@@ -24,7 +24,7 @@ Follow these steps to set up and run the project locally:
    **for frontend
    git clone https://github.com/your-username/taskmanager.git
    **for backend
-   git clone https://github.com/SonamKumari1227/ToDo-App.git/
+   git clone https://github.com/SonamKumari1227/MERN-based-TO-DO-Application.git
 Install Dependencies:
 
 bash
