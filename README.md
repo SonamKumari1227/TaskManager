@@ -43,32 +43,14 @@ bash
 Copy code
 # Run Frontend
 cd ../client
-npm start
+npm start 
 
-# Run Backend
-cd ../backend
-npm start
+### Run Backend
+cd ../server
+nodemon server.js
+
 Visit http://localhost:3000 in your browser to access the Task Manager application.
 
-Folder Structure
-lua
-Copy code
-taskmanager/
-|-- client/
-|   |-- src/
-|   |   |-- components/
-|   |   |-- pages/
-|   |   |-- App.js
-|   |   |-- index.js
-|   |-- package.json
-|-- server/
-|   |-- src/
-|   |   |-- controllers/
-|   |   |-- models/
-|   |   |-- routes/
-|   |   |-- server.js
-|   |-- package.json
-|-- README.md
 Contributing
 If you'd like to contribute to the project, feel free to fork the repository and submit a pull request. We welcome contributions!
 
