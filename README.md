@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
+Task Manager is a web application designed to help users organize and manage their tasks efficiently. The frontend is built using React, providing a seamless and intuitive user experience. The backend, powered by Node.js and Express, handles user authentication, task management, and data storage in MongoDB. The communication between the frontend and backend is established using Axios.
 
-## Available Scripts
+### Features
 
-In the project directory, you can run::
+- **User Registration and Login:** Secure user authentication system allowing users to register and log in securely.
 
-### `npm start`
+- **Task Management:** Add, update, and delete tasks to keep track of your activities.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **MongoDB Integration:** All tasks are stored in a MongoDB database, ensuring data persistence.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Express APIs:** The backend features a set of Express APIs that seamlessly handle communication with the frontend.
 
-### `npm test`
+- **Axios for Data Exchange:** Utilizing Axios for smooth and efficient data transfer between the frontend and backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Getting Started
 
-### `npm run build`
+Follow these steps to set up and run the project locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/taskmanager.git
+Install Dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+cd taskmanager/frontend
+npm install
+cd ../backend
+npm install
+Configure MongoDB:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure you have a running MongoDB instance.
+Update the MongoDB connection string in the backend configuration file.
+Run the Application:
 
-### `npm run eject`
+bash
+Copy code
+# Run Frontend
+cd ../client
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Run Backend
+cd ../backend
+npm start
+Visit http://localhost:3000 in your browser to access the Task Manager application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Folder Structure
+lua
+Copy code
+taskmanager/
+|-- frontend/
+|   |-- src/
+|   |   |-- components/
+|   |   |-- pages/
+|   |   |-- App.js
+|   |   |-- index.js
+|   |-- package.json
+|-- backend/
+|   |-- src/
+|   |   |-- controllers/
+|   |   |-- models/
+|   |   |-- routes/
+|   |   |-- server.js
+|   |-- package.json
+|-- README.md
+Contributing
+If you'd like to contribute to the project, feel free to fork the repository and submit a pull request. We welcome contributions!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+License
+This project is licensed under the MIT License.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact
+For any questions or concerns, please contact er.sonam2712kumari@gmail.com
