@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
+import Index from './components/Index';
+import TodoApp from './components/TodoApp';
 
-function App() {
+
+const App = () => {
+  const [data, setdata] = useState("");
+
+  const DataFromServer = async () => {
+    try {
+     const response= axios.get("http://localhost:8000/getdata");
+      setdata(response.data);
+    }
+    catch (e) {
+      console.log(e);
+   }
+  }
+  useEffect(() => {
+    DataFromServer();
+  }, [])
+  
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <TodoApp/>
+    
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+

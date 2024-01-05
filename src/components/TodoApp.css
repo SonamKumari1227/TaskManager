@@ -1,0 +1,166 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #c6b9f1; 
+  color: #ffffff; 
+}
+
+.navbar {
+  background-color: #003366;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  text-align: center;
+  height: 5vh;
+}
+
+h1 {
+  color: #ffffff; 
+  margin: 0;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #7fdbff; 
+}
+
+.todoapp {
+  padding: 30px 50px;
+  text-align: center;
+  margin-top: 60px; 
+}
+
+.todoapp form {
+  margin-bottom: 20px;
+}
+
+.todoapp input[type="text"] {
+  width: 60%; 
+  padding: 12px;
+  border: 1px solid #003366;
+  border-radius: 8px;
+  background-color: #1d1224; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; 
+  margin-top: 10px; 
+  color: white;
+  font-weight: bold;
+}
+
+.todoapp input[type="text"]:focus {
+  outline: none;
+  background-color: #141148;
+}
+
+.todoapp input[type="submit"],
+.todoapp button {
+  width: 20%; /* Adjusted width for the button */
+  background-color: #004080; 
+  color: #ffffff; 
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 8px 4px; /* Added margin for spacing */
+}
+
+.todoapp input[type="submit"]:hover,
+.todoapp button:hover {
+  background-color: #001f3f; 
+}
+
+#btn1 {
+  margin-left: 5px; 
+}
+
+.todoapp ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoapp li {
+  margin: 10px 0; 
+  padding: 15px;
+  background-color: #003366;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  max-width: 400px; 
+  width: 100%; 
+  color: #ffffff; /* Set white text color */
+}
+
+.todoapp li.complete {
+  background-color: #006400; 
+}
+
+.todoapp label {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.todoapp li:hover {
+  background-color: #dae5f0;
+  color: #001f3f; /* Change text color on hover */
+}
+
+
+@media (max-width: 768px) {
+  .todoapp {
+    padding: 20px;
+  }
+
+  .todoapp input[type="text"] {
+    width: 100%;
+  }
+
+  .todoapp button {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  #btn1 {
+    margin-left: 0;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+}
+
+
+
+
+
