@@ -21,7 +21,10 @@ Follow these steps to set up and run the project locally:
 
 1. **Clone the Repository:**
    ```bash
+   **for frontend
    git clone https://github.com/your-username/taskmanager.git
+   **for backend
+   git clone https://github.com/SonamKumari1227/ToDo-App.git/
 Install Dependencies:
 
 bash
@@ -51,14 +54,14 @@ Folder Structure
 lua
 Copy code
 taskmanager/
-|-- frontend/
+|-- client/
 |   |-- src/
 |   |   |-- components/
 |   |   |-- pages/
 |   |   |-- App.js
 |   |   |-- index.js
 |   |-- package.json
-|-- backend/
+|-- server/
 |   |-- src/
 |   |   |-- controllers/
 |   |   |-- models/
