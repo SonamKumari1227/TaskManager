@@ -43,11 +43,11 @@ bash
 Copy code
 # Run Frontend
 cd ../client
-###npm start 
+**npm start 
 
-## Run Backend
+#Run Backend
 cd ../server
-###nodemon server.js
+**nodemon server.js
 
 Visit http://localhost:3000 in your browser to access the Task Manager application.
 
